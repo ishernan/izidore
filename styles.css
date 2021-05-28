@@ -16,6 +16,18 @@ input {
   color: #fff;
 }
 
+.imageBannier {
+  background-image: url('./images/living-3428529_1280.jpg');
+  height: 600px;
+  width: 1920px;
+  background-repeat: no-repeat ;
+
+}
+
+.box-Sha {
+  text-shadow: rgba(0, 0, 0, 0.3); 
+}
+
 /* .btn, .btn:focus {
   outline: none;
 } */
