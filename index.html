@@ -6,6 +6,8 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 
     <title>Izidore</title>
@@ -14,16 +16,16 @@
     <header>
       <nav class="navbar navbar-light bg-white border shadow-sm">
         <div class="container-fluid">
-          <a class="navbar-brand lead fs-2">izidore</a>
+          <a class="navbar-brand fs-2 icon">izidore</a>
           <form class="d-flex container justify-content-center">
-            <input class="form-control rounded-pill border-2 bg-light w-50" type="search"  placeholder="Quel produit vous ferait plaisir ?" aria-label="Search" >            
-            <button class="btn btn-warning btn-lg d-flex align-items-center shadow-1 rounded-pill gauche" type="submit"><i class="bi bi-search"></i></button>              
+            <input class="form-control rounded-pill border-2 bg-light w-50 icon" type="search"  placeholder="Quel produit vous ferait plaisir ?" aria-label="Search" >            
+            <button class="btn btn-search btn-outline-warning btn-lg d-flex align-items-center shadow-1 rounded-pill" type="submit"><i class="bi bi-search"></i></button>              
           </form>
           <div>
-            <button type="button" class="btn button-vert text-uppercase text-white">Vendre</button>
-            <a class="btn btn-outline-light m-1 text-dark" role="button" ><i class="bi bi-heart"></i></a>   
-            <a class="btn btn-outline-light m-1 text-dark" role="button" ><i class="bi bi-cart3"></i></a>
-            <a class="btn btn-outline-light m-1 text-dark" role="button" ><i class="bi bi-file-person"></i></a>
+            <button type="button" class="btn button-vert text-uppercase fw-bold px-4">Vendre</button>
+            <a class="btn btn-outline-light text-dark" role="button" ><i class="bi bi-heart"></i></a>   
+            <a class="btn btn-outline-light text-dark" role="button" ><i class="bi bi-cart3"></i></a>
+            <a class="btn btn-outline-light text-dark" role="button" ><i class="bi bi-file-person"></i></a>
           </div> 
         </div>
       </nav>
@@ -34,26 +36,28 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active text-danger fw-bold text-uppercase" aria-current="page" href="#">Nouveautés</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Vide-Appats</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Meubles</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Eléctroménager</a>
-              </li> 
-              <li class="nav-item">
-                <a class="nav-link" href="#">Décoration</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Marques</a>
-              </li>
-              <div class="d-flex">
+            <ul class="navbar-nav icon">
+              <div class="d-inline-flex">
+                <li class="nav-item">
+                    <a class="nav-link active text-danger fw-bold text-uppercase" aria-current="page" href="#">Nouveautés</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Vide-Apparts</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Meubles</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Eléctroménager</a>
+                  </li> 
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Décoration</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Marques</a>
+                </li>
+              </div> 
+              <div class="d-inline-flex">
                 <li class="nav-item">
                   <a class="nav-link" href="#">Comment ça marche ?</a>
                 </li>
@@ -70,18 +74,257 @@
       </nav>
     </header>
 
-    <main class="">
+    <main class="container-fluid">
       <header>            
-       <div class="container-fluid imageBannier">
-          <div class="row text-center">
-            <p class="text-uppercase fs-4 text-white text-start box-Sha"><strong>Bienvenue chez Antoine</strong></p>              
+        <div class="container-fluid imageBannier">
+           <div class="row text-center">
+             <p class="text-uppercase fs-4 text-white text-start box-Sha"><strong>Bienvenue chez Antoine</strong></p>              
+           </div>
+         </div> 
+       </header>
+
+      <section class="article container-fluid">
+       <div class="row d-flex justify-content-center">
+     
+        <div class="col-xl-3 col-lg-3 col-md-12 order-md-2 order-sm-2 order-lg-1"> 
+          <div class="card card-vendeur box-Sha" style="width: 22rem; margin-top:-61px;">
+            <div class="d-flex align-items-center justify-content-center background">
+              <h5 class="card-title h6 text-center"><i class="bi bi-geo-alt h2 pe-3"></i>Toulouse, 31000</h5>
+            </div>
+            <div class="card-body">
+              <div class="card-text">
+                <h2 class="m-5">
+                  <span class="z me-3">Z'</span>
+                  Antoine
+                </h2> 
+                <h5> Meubles descendus</h5>
+                  <div class="d-flex">
+                    <i class="bi bi-arrow-down pe-3 arrow"></i>
+                    <p class=""> Antoine s'engage à descendre ses meubles au rez-de-chaussée ! </p>
+                  </div>
+                  
+                  <h5> Préférence de retrait</h5>
+                  <div class="d-flex">
+                    <i class="bi bi-calendar3 pe-3 calendar"></i>
+                    <p class=""> 
+                      Semaine : de 08h à 20h <br>
+                      Week-end : de 08h à 20h </p>
+                  </div>
+
+                  <div class="accordion accordion-flush mb-4" id="accordionFlushExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"
+                        style="background-color: white; color: black;">
+                          Description
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                          ⚠️ Vide-appartement témoin : rien n'est à vendre !
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              <a href="#" class="btn w-100 mb-5 text-uppercase fw-bold">Entrer en contact</a>
+            </div>
+            <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+              <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div><script>(function () {
+                  var setting = {"height":385,"width":803,"zoom":17,"queryString":"7 Boulevard des Minimes, Toulouse, France","place_id":"ChIJNbQcQKS8rhIRqPHisX3C7tA","satellite":false,"centerCoord":[43.614944415130495,1.4494223999999978],"cid":"0xd0eec27db1e2f1a8","lang":"fr","cityUrl":"/france/toulouse","cityAnchorText":"Carte de Toulouse, Sud de la France, France","id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"511633"};
+                  var d = document;
+                  var s = d.createElement('script');
+                  s.src = 'https://1map.com/js/script-for-user.js?embed_id=511633';
+                  s.async = true;
+                  s.onload = function (e) {
+                    window.OneMap.initMap(setting)
+                  };
+                  var to = d.getElementsByTagName('script')[0];
+                  to.parentNode.insertBefore(s, to);
+                })();</script><a href="https://1map.com/fr/map-embed">1 Map</a></div>
+            </div>
           </div>
         </div>
 
-      </header>
-      
+        <div class="col-xl-7 col-lg-7 col-md-12 order-md-1">
+          <div class="row m-5 ">
+                       
+            <div class="col-xl-4 col-lg-6 col-md-6 d-flex justify-content-center mb-3">
+              <div class="card" style="width: 20rem; border: none;">
+                <img src="./images/couch-447484_1920.jpg" class="card-img-top" alt="...">
+                <div class="d-flex align-items-center justify-content-center">
+                  <h5 class="card-title h6 text-center background-card-article mb-0">Déco</h5>
+                </div>
+                <div class="card-body p-1">
+                  <div class=" card-text d-flex justify-content-between">
+                    <div>
+                      <span class="fs-3 fw-bold">11 €  </span>  <br><p class="gray">  Maison du Monde </p>
+                    </div>
+                    <div class="panier align-middle mt-3">
+                      <i class="bi bi-cart3"></i>
+                    </div>
+                  </div>
+                  <a href="#" class="btn btn-mondialrelay"><i class="bi bi-truck me-2"></i>Mondial Relay</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-md-6 d-flex justify-content-center mb-3">
+              <div class="card" style="width: 20rem; border: none;">
+                <img src="./images/couch-447484_1920.jpg" class="card-img-top" alt="...">
+                <div class="d-flex align-items-center justify-content-center">
+                  <h5 class="card-title h6 text-center background-card-article mb-0">Déco</h5>
+                </div>
+                <div class="card-body p-1">
+                  <div class=" card-text d-flex justify-content-between">
+                    <div>
+                      <span class="fs-3 fw-bold">11 €  </span>  <br><p class="gray">  Maison du Monde </p>
+                    </div>
+                    <div class="panier align-middle mt-3">
+                      <i class="bi bi-cart3"></i>
+                    </div>
+                  </div>
+                  <a href="#" class="btn btn-mondialrelay"><i class="bi bi-truck me-2"></i>Mondial Relay</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-md-6 d-flex justify-content-center mb-3">
+              <div class="card" style="width: 20rem; border: none;">
+                <img src="./images/couch-447484_1920.jpg" class="card-img-top" alt="...">
+                <div class="d-flex align-items-center justify-content-center">
+                  <h5 class="card-title h6 text-center background-card-article mb-0">Déco</h5>
+                </div>
+                <div class="card-body p-1">
+                  <div class=" card-text d-flex justify-content-between">
+                    <div>
+                      <span class="fs-3 fw-bold">11 €  </span>  <br><p class="gray">  Maison du Monde </p>
+                    </div>
+                    <div class="panier align-middle mt-3">
+                      <i class="bi bi-cart3"></i>
+                    </div>
+                  </div>
+                  <a href="#" class="btn btn-mondialrelay"><i class="bi bi-truck me-2"></i>Mondial Relay</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-md-6 d-flex justify-content-center mb-3">
+              <div class="card" style="width: 20rem; border: none;">
+                <img src="./images/couch-447484_1920.jpg" class="card-img-top" alt="...">
+                <div class="d-flex align-items-center justify-content-center">
+                  <h5 class="card-title h6 text-center background-card-article mb-0">Déco</h5>
+                </div>
+                <div class="card-body p-1">
+                  <div class=" card-text d-flex justify-content-between">
+                    <div>
+                      <span class="fs-3 fw-bold">11 €  </span>  <br><p class="gray">  Maison du Monde </p>
+                    </div>
+                    <div class="panier align-middle mt-3">
+                      <i class="bi bi-cart3"></i>
+                    </div>
+                  </div>
+                  <a href="#" class="btn btn-mondialrelay"><i class="bi bi-truck me-2"></i>Mondial Relay</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-md-6 d-flex justify-content-center mb-3">
+              <div class="card" style="width: 20rem; border: none;">
+                <img src="./images/couch-447484_1920.jpg" class="card-img-top" alt="...">
+                <div class="d-flex align-items-center justify-content-center">
+                  <h5 class="card-title h6 text-center background-card-article mb-0">Déco</h5>
+                </div>
+                <div class="card-body p-1">
+                  <div class=" card-text d-flex justify-content-between">
+                    <div>
+                      <span class="fs-3 fw-bold">11 €  </span>  <br><p class="gray">  Maison du Monde </p>
+                    </div>
+                    <div class="panier align-middle mt-3">
+                      <i class="bi bi-cart3"></i>
+                    </div>
+                  </div>
+                  <a href="#" class="btn btn-mondialrelay"><i class="bi bi-truck me-2"></i>Mondial Relay</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-md-6 d-flex justify-content-center mb-3">
+              <div class="card" style="width: 20rem; border: none;">
+                <img src="./images/couch-447484_1920.jpg" class="card-img-top" alt="...">
+                <div class="d-flex align-items-center justify-content-center">
+                  <h5 class="card-title h6 text-center background-card-article mb-0">Déco</h5>
+                </div>
+                <div class="card-body p-1">
+                  <div class=" card-text d-flex justify-content-between">
+                    <div>
+                      <span class="fs-3 fw-bold">11 €  </span>  <br><p class="gray">  Maison du Monde </p>
+                    </div>
+                    <div class="panier align-middle mt-3">
+                      <i class="bi bi-cart3"></i>
+                    </div>
+                  </div>
+                  <a href="#" class="btn btn-mondialrelay"><i class="bi bi-truck me-2"></i>Mondial Relay</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-md-6 d-flex justify-content-center mb-3">
+              <div class="card" style="width: 20rem; border: none;">
+                <img src="./images/couch-447484_1920.jpg" class="card-img-top" alt="...">
+                <div class="d-flex align-items-center justify-content-center">
+                  <h5 class="card-title h6 text-center background-card-article mb-0">Déco</h5>
+                </div>
+                <div class="card-body p-1">
+                  <div class=" card-text d-flex justify-content-between">
+                    <div>
+                      <span class="fs-3 fw-bold">11 €  </span>  <br><p class="gray">  Maison du Monde </p>
+                    </div>
+                    <div class="panier align-middle mt-3">
+                      <i class="bi bi-cart3"></i>
+                    </div>
+                  </div>
+                  <a href="#" class="btn btn-mondialrelay"><i class="bi bi-truck me-2"></i>Mondial Relay</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-md-6 d-flex justify-content-center mb-3">
+              <div class="card" style="width: 20rem; border: none;">
+                <img src="./images/couch-447484_1920.jpg" class="card-img-top" alt="...">
+                <div class="d-flex align-items-center justify-content-center">
+                  <h5 class="card-title h6 text-center background-card-article mb-0">Déco</h5>
+                </div>
+                <div class="card-body p-1">
+                  <div class=" card-text d-flex justify-content-between">
+                    <div>
+                      <span class="fs-3 fw-bold">11 €  </span>  <br><p class="gray">  Maison du Monde </p>
+                    </div>
+                    <div class="panier align-middle mt-3">
+                      <i class="bi bi-cart3"></i>
+                    </div>
+                  </div>
+                  <a href="#" class="btn btn-mondialrelay"><i class="bi bi-truck me-2"></i>Mondial Relay</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-md-6 d-flex justify-content-center mb-3">
+              <div class="card" style="width: 20rem; border: none;">
+                <img src="./images/couch-447484_1920.jpg" class="card-img-top" alt="...">
+                <div class="d-flex align-items-center justify-content-center">
+                  <h5 class="card-title h6 text-center background-card-article mb-0">Déco</h5>
+                </div>
+                <div class="card-body p-1">
+                  <div class=" card-text d-flex justify-content-between">
+                    <div>
+                      <span class="fs-3 fw-bold">11 €  </span>  <br><p class="gray">  Maison du Monde </p>
+                    </div>
+                    <div class="panier align-middle mt-3">
+                      <i class="bi bi-cart3"></i>
+                    </div>
+                  </div>
+                  <a href="#" class="btn btn-mondialrelay"><i class="bi bi-truck me-2"></i>Mondial Relay</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
+      </div>
 
+    </section>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>

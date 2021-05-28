@@ -1,8 +1,19 @@
-.gauche{
-  margin-left: -50px;
-  /* position: absolute; */
+
+.icon {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
 }
 
+.btn-search {
+  background-color: #ffd932;
+  color: black;
+  font-weight: bold;
+  margin-left: -50px;
+}
+
+header i {
+  font-size: 25px;
+}
 
 
 input {
@@ -12,42 +23,100 @@ input {
 }
 .button-vert {
   background-color: #58b58d;
-  border-color: #58b58d;
   color: #fff;
 }
+.button-vert:hover {
+  background-color: #fff;
+  border-color: #58b58d;
+  color: #58b58d;
+}
+
 
 .imageBannier {
   background-image: url('./images/living-3428529_1280.jpg');
-  height: 600px;
-  width: 1920px;
-  background-repeat: no-repeat ;
+  height: 440px;
+  background-repeat: no-repeat;
+  background-size: cover;
 
 }
 
 .box-Sha {
-  text-shadow: rgba(0, 0, 0, 0.3); 
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-/* .btn, .btn:focus {
-  outline: none;
-} */
+.background {
+  background-color: #d6e3d8;
+  height: 60px;
+}
 
-/* .btn{  
-  -webkit-appearance: none;
-  border-radius: 22.5px;
-  border: 2px solid #ffd932;
+.z {
+  background-color: #58b58d;
+  clip-path: circle(50% at 50% 50%);
+  padding: 10px 20px;
+
+
+  color: white;
+  font-style: italic;
+  font-weight: 100;
+}
+
+.card-vendeur h2 {
+  color: #58b58d;
+}
+.card-vendeur h5 {
+  font-size: 15px;
+}
+
+.card-vendeur p {
+  font-size: 12px;
+  font-weight: 100;
+}
+
+.arrow, 
+.calendar {
+  color: #58b58d;
+  font-size: 20px;
+}
+
+.card-vendeur a {
+  background-color: #58b58d;
+  color: white;
+}
+
+.accordion-body {
+  font-size: 12px;
+}
+
+.background-card-article {
+  background-color: #29362e;
+  color: white;
+  height: 40px;
+  width: 100%;
+  font-weight: 100;
+  padding-top: 10px;
+  border-radius: 0 0 3px 3px;
+  
+}
+
+.panier {
   background-color: #ffd932;
-  color: #29362e;
-  display: inline-block;
-  line-height: 40px;
-  height: 45px;
-  padding: 0 22.5px;
-  font-size: 1rem;
-  cursor: pointer;
-  max-width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  font-family: Poppins-SemiBold;
-  box-shadow: 1px 1px 3px #f7f7f7;
-} */
+  width: 60px;
+  height: 35px;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 40px;
+  text-align: center;
+}
+
+.gray {
+  color: rgb(175, 174, 174);
+  font-weight: 500;
+}
+
+.btn-mondialrelay {
+  background-color: #d6e3d8 ;
+
+}
+.btn-mondialrelay i {
+  color: orangered;
+}
