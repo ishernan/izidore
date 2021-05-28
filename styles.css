@@ -10,3 +10,32 @@ input {
   font-family:cursive;
   /* opacity: .5; */
 }
+.button-vert {
+  background-color: #58b58d;
+  border-color: #58b58d;
+  color: #fff;
+}
+
+/* .btn, .btn:focus {
+  outline: none;
+} */
+
+/* .btn{  
+  -webkit-appearance: none;
+  border-radius: 22.5px;
+  border: 2px solid #ffd932;
+  background-color: #ffd932;
+  color: #29362e;
+  display: inline-block;
+  line-height: 40px;
+  height: 45px;
+  padding: 0 22.5px;
+  font-size: 1rem;
+  cursor: pointer;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: Poppins-SemiBold;
+  box-shadow: 1px 1px 3px #f7f7f7;
+} */
