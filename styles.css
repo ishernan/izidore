@@ -1,4 +1,12 @@
 .gauche{
   margin-left: -50px;
+  /* position: absolute; */
 }
 
+
+
+input {
+  font-size: 20px;
+  font-family:cursive;
+  /* opacity: .5; */
+}
