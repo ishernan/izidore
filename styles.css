@@ -58,6 +58,11 @@ input {
   font-weight: 100;
 }
 
+.card-vendeur {
+  width: 22rem; 
+  margin-top:-121px;
+}
+
 .card-vendeur h2 {
   color: #58b58d;
 }
@@ -70,16 +75,18 @@ input {
   font-weight: 100;
 }
 
+.card-vendeur a {
+  background-color: #58b58d;
+  color: white;
+}
+
 .arrow, 
 .calendar {
   color: #58b58d;
   font-size: 20px;
 }
 
-.card-vendeur a {
-  background-color: #58b58d;
-  color: white;
-}
+
 
 .accordion-body {
   font-size: 12px;
@@ -118,3 +125,9 @@ input {
 .btn-mondialrelay i {
   color: orangered;
 }
+
+
+/* @media (max-width: 690px) {
+  .margin{
+    margin-left: 0;
+  } */
