@@ -1,7 +1,12 @@
 
-.icon {
+.police1 {
   font-family: 'Roboto Slab', serif;
   font-weight: 300;
+}
+
+.police2{
+  font-family: 'Poppins', sans-serif; 
+  
 }
 
 .btn-search {
@@ -29,6 +34,7 @@ input {
   background-color: #fff;
   border-color: #58b58d;
   color: #58b58d;
+  
 }
 
 
