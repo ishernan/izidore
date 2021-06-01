@@ -9,6 +9,10 @@
   
 }
 
+h3{
+  font-size: 30px;
+}
+
 .btn-search {
   background-color: #ffd932;
   color: black;
@@ -194,6 +198,17 @@ a:hover {
   width: 100%;
   object-fit:contain;
 }
+.cardImage {
+  height: 20vh;
+  width: 100%;
+  object-fit:contain;
+}
+
+.bgImage{
+  background-image: url('/images/bgImagen.jpg');
+}
+
+
 
 /* @media (max-width: 690px) {
   .margin{
