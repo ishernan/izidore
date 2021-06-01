@@ -189,7 +189,11 @@ a:hover {
 } */
 
 
-
+.card-img-top{
+  height: 20vh;
+  width: 100%;
+  object-fit:contain;
+}
 
 /* @media (max-width: 690px) {
   .margin{
