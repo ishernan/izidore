@@ -3,7 +3,6 @@
 //   $(".owl-carousel").owlCarousel(); 
 //   });
 
-
 $(".owl-carousel").owlCarousel({
   autoplay: false, 
   autoplayhoverpause: true,
@@ -34,3 +33,11 @@ $(".owl-carousel").owlCarousel({
     }
   }
 }); 
+
+var counter;
+function evaluations(item){
+  console.log(item)
+  counter= item.id; 
+  let name = item.id.sub
+
+}
