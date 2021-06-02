@@ -34,10 +34,24 @@ $(".owl-carousel").owlCarousel({
   }
 }); 
 
-var counter;
-function evaluations(item){
-  console.log(item)
-  counter= item.id; 
-  let name = item.id.sub
 
+
+$(document).ready(function() {
+  couleurEtoiles();
+   
+  $('.bi-star-fill').mouseover(function () {  
+    counter= parseInt($(this).data('index')); 
+
+    for(let i=0; i<= counter; i++)
+    $('.bi-star-fill:eq('+i+')').css('color', '#FFC107');
+
+  });
+  $('.bi-star-fill').mouseleave(function(){
+    couleurEtoiles();
+  });
+
+});
+
+function couleurEtoiles(){
+  $('.bi-star-fill').css('color', 'rgb(143, 140, 140)');
 }
