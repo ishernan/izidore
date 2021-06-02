@@ -67,6 +67,7 @@ input {
   color: white;
   font-style: italic;
   font-weight: 100;
+  font-family: 'Roboto Slab', serif;
 }
 
 .card-vendeur {
@@ -210,9 +211,11 @@ a:hover {
 
 
 
-/* @media (max-width: 690px) {
-  .margin{
-    margin-left: 0;
+/* @media (max-width: 1390px) {
+  .responsive1 {
+    padding: 0;
+    
+  }
   } */
 
   

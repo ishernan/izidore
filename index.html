@@ -21,6 +21,7 @@
   </head>
   <body>
     <header>
+      <!-- nav1 -->
       <nav class="navbar navbar-expand-lg navbar-light bg-white border shadow-sm">
         <div class="container-fluid">
           <a class="navbar-brand fs-2 police1">izidore</a>
@@ -36,7 +37,9 @@
           </div> 
         </div>
       </nav>
+      <!-- nav1 -->
 
+      <!-- nav2 -->
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -79,60 +82,66 @@
             </ul>
           </div> 
                        
-        </div>
-              
+        </div>              
       </nav>
+      <!-- nav2 -->
     </header>
 
     <main>
-      <section>            
+      <section> 
+        <!-- banier -->           
         <div class="container-fluid imageBannier">
           <p class="text-uppercase text-white text-start ps-5 pt-4 police2" style="font-size: 35px;"><strong>Bienvenue chez Antoine</strong>
           </p>              
         </div> 
+        <!-- banier -->
       </section>
 
       <section class="container-fluid">   
            
        <div class="row mt-5">     
-        <div class="col-12 col-lg-4 order-md-2 order-sm-2 order-lg-1"> 
+       <!-- card vendeur -->  
+        <div class="col-12 col-lg-4 col-md- order-md-1 order-lg-1"> 
           <div class="card card-vendeur box-Sha mx-auto">
             <div class="d-flex align-items-center justify-content-center background">
-              <h5 class="card-title h6 text-center"><i class="bi bi-geo-alt h2 pe-3"></i>Toulouse, 31000</h5>
+              <h5 class="card-title text-center fw-bold police2" style="font-size: 17px;"><i class="bi bi-geo-alt h4 pe-3"></i>Toulouse, 31000</h5>
             </div>
             <div class="card-body">
-              <div class="card-text">
-                <h2 class="m-5"><span class="z me-3">Z'</span>Antoine</h2> 
-                <h5> Meubles descendus</h5>
+              <div class="card-text m-4 police2">
+                <h2 class="pb-3">
+                  <span class="z me-3">Z'</span>
+                  <span style="font-size: 30px; font-weight: 400;"> Antoine</span>
+                </h2> 
+                <h5 class=""> Meubles descendus</h5>
                   <div class="d-flex">
                     <i class="bi bi-arrow-down pe-3 arrow"></i>
-                    <p class=""> Antoine s'engage à descendre ses meubles au rez-de-chaussée ! </p>
-                  </div>
-                  
-                  <h5> Préférence de retrait</h5>
+                    <p class=" police1"> Antoine s'engage à descendre ses meubles au rez-de-chaussée ! </p>
+                  </div>                  
+                <h5> Préférence de retrait</h5>
                   <div class="d-flex">
                     <i class="bi bi-calendar3 pe-3 calendar"></i>
-                    <p class=""> 
+                    <p class="police1"> 
                       Semaine : de 08h à 20h <br>
                       Week-end : de 08h à 20h </p>
                   </div>
-
-                  <div class="accordion accordion-flush mb-4" id="accordionFlushExample">
+                  <hr class="text-muted">
+                  <div class="accordion accordion-flush p-0" id="accordionFlushExample">
                     <div class="accordion-item">
                       <h2 class="accordion-header" id="flush-headingOne">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"
-                        style="background-color: white; color: black;">
+                        style="background-color: white;">
                           Description
                         </button>
                       </h2>
                       <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body">
                           ⚠️ Vide-appartement témoin : rien n'est à vendre !
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              <a href="#" class="btn w-100 mb-5 text-uppercase fw-bold">Entrer en contact</a>
+                  <hr class="text-muted">
+              <a href="#" class="btn w-100 text-uppercase button-vert"><span style="font-size: 18px;">Entrer en contact</span></a>
             </div>
             <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
               <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div><script>(function () {
@@ -150,9 +159,11 @@
             </div>
           </div>
         </div>
-
-        <div class="col-12 col-lg-7 order-md-1">
-          <div class="row ">                       
+       <!-- card vendeur -->
+       
+       <!-- cards articles -->
+        <div class="col-12 col-lg-8 col-xl-8 order-md-2 pe-5 ps-0 responsive1">
+          <div class="row">                       
             <div class="col-12 col-md-6 col-xl-4 d-flex justify-content-center mb-3">
               <div class="card box-Sha full" style="width: 20rem; border: none;">
                 <img src="./images/lampe.jpeg" class="card-img-top" alt="...">
@@ -328,7 +339,7 @@
             </div>
           </div>
         </div>
-
+       <!-- cards articles --> 
        </div>
       </section>
     </main>
