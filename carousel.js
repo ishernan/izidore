@@ -1,7 +1,5 @@
 
-// $(document).ready(function () {
-//   $(".owl-carousel").owlCarousel(); 
-//   });
+//carousel
 
 $(".owl-carousel").owlCarousel({
   autoplay: false, 
@@ -34,24 +32,35 @@ $(".owl-carousel").owlCarousel({
   }
 }); 
 
+//etoiles
 
+
+let evalIndex =-1;   //quand il y a pas evaluation
 
 $(document).ready(function() {
-  couleurEtoiles();
-   
-  $('.bi-star-fill').mouseover(function () {  
-    counter= parseInt($(this).data('index')); 
+  remplacerCouleur();   
 
-    for(let i=0; i<= counter; i++)
-    $('.bi-star-fill:eq('+i+')').css('color', '#FFC107');
+  $('.bi-star-fill').on('click', function () { 
+    evalIndex= parseInt($(this).attr('data-index')); 
+   })
+  $('.bi-star-fill').on('mouseover', function() { 
+    remplacerCouleur();   
+    valeurIndex= parseInt($(this).attr('data-index')); 
+
+    for(let i=0; i<= valeurIndex; i++)    
+    $('.bi-star-fill').eq(i).css('color', '#FFC107'); //$('.bi-star-fill:eq('+i+')').css('color', '#FFC107');
 
   });
-  $('.bi-star-fill').mouseleave(function(){
-    couleurEtoiles();
+  $('.bi-star-fill').on('mouseleave', function(){
+    remplacerCouleur();
+    if(evalIndex != -1){
+      for(let i=0; i<= evalIndex; i++)    
+      $('.bi-star-fill').eq(i).css('color', '#FFC107');
+    }
   });
 
 });
 
-function couleurEtoiles(){
+function remplacerCouleur(){
   $('.bi-star-fill').css('color', 'rgb(143, 140, 140)');
 }
