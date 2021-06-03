@@ -116,17 +116,23 @@
                   <span class="z me-3">Z'</span>
                   <span style="font-size: 30px; font-weight: 400;"> Antoine</span>
                 </h2>
-                <div>
-                  <span class="police1" role="button" tabindex="0" id="evaluations">
-                    <i class="bi bi-star-fill" data-index="0"></i>
-                    <i class="bi bi-star-fill" data-index="1"></i>
-                    <i class="bi bi-star-fill" data-index="2"></i>
-                    <i class="bi bi-star-fill" data-index="3"></i>
-                    <i class="bi bi-star-fill" data-index="4"></i>
-                    
-                  </span>
+                <div class="" role="button" tabindex="0" id="evaluations">
+                  <a href="/evaluation.html" class="bg-white">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </a>             
                 </div>
                 
+                <div class="card bg-light mb-3 d-none" style="max-width: 10rem;" id="cardRating">
+                  <div class="card-header police1" style="font-size: 16px;">Evaluez le vendeur</div>
+                  <div class="card-body police1">
+                    <h5 class="card-title ">65 évaluations</h5>
+                    <p class="card-text fw-bold">2,3 sur 5</p>
+                  </div>
+                </div>
 
                 <h5 class="mt-2"> Meubles descendus</h5>
                   <div class="d-flex">
@@ -635,6 +641,7 @@
 
     <script src="./owl.carousel.min.js"></script>
     <script src="./carousel.js"></script>
+    <script src="./rating.js"></script>
 
    
   </body>
