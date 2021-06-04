@@ -20,31 +20,63 @@
     <title>rating</title>
   </head>
 
-  <div class="container text-center mt-5">
-    <h3 class="">Notez le vendeur</h3>
-      <h4>Antoine</h4>
-     
-    <div class="row d-flex justify-content-center">
-      <div class="col-md-6 ">
-        <form action="" method="POST">
-          <div class="form-group">
-            <label for="">Rating</label>
+  <body>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb container">
+        <li class="breadcrumb-item"><a href="./index.html" class="text-black-50">Accueil</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Notez le client</li>
+      </ol>
+    </nav>
+       
+    <div class="row d-flex justify-content-center">      
+      <div class="col-md-6 container text-center mt-5 border box-Sha py-4">
+        <div class="police2">
+          <h3>Notez le vendeur</h3>
+          <h4>Antoine</h4>
+        </div>
+         <div>
+          <span class="police1" role="button" tabindex="0" id="evaluations" style="font-size: 2em; ">
+            <i class="bi bi-star-fill" data-index="0" aria-hidden="true"></i>
+            <i class="bi bi-star-fill" data-index="1"></i>
+            <i class="bi bi-star-fill" data-index="2"></i>
+            <i class="bi bi-star-fill" data-index="3"></i>
+            <i class="bi bi-star-fill" data-index="4"></i>                
+          </span>
+          <p class="lead" id="note">0</p>
+        </div> 
+        <form action="" method="POST" id="formulaire">        
+          <div class="col-md-10 container text-center mt-5 border">
             <div>
-              <span class="police1" role="button" tabindex="0" id="evaluations">
-                <i class="bi bi-star-fill" data-index="0"></i>
-                <i class="bi bi-star-fill" data-index="1"></i>
-                <i class="bi bi-star-fill" data-index="2"></i>
-                <i class="bi bi-star-fill" data-index="3"></i>
-                <i class="bi bi-star-fill" data-index="4"></i>                
-              </span>
+              <label for="user" class="form-label"></label>
+              <input type="text" name="user" id="user" class="form-control" placeholder="User">
+            </div> 
+            <div class="mb-3">
+              <label for="motDePasse" class="form-label"></label>
+              <input type="password" class="form-control" placeholder="Mot de passe" id="motDePasse" name="passe">
+            </div> 
+            <div class="mb-3">
+              <label class="form-label"></label>
+              <textarea name="avis" class="form-control" placeholder="Redigez votre message ici" rows="8"></textarea>
             </div>
-            <input type="hidden" name="rating" id="rating" value="0">
-
-          </div>
-          
-        </form>
+            <button id="btnEnvoyer" type="submit" class="btn button-vert mb-3">Envoyer</button>
+            <button id="btnLoad" class="btn btn-secondary d-none" type="button" disabled>
+              <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+              <span class="visually-hidden"></span> Cargando...
+            </button>
+  
+        </form> 
       </div>
-    </div>
+
+      <div class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex">
+          <div class="toast-body">
+          Evaluation envoyée
+         </div>
+          <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+      </div>
+
+      </div>
   
     
 
