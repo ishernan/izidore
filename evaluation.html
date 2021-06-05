@@ -10,8 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="./owl.carousel.min.css">
-    <link rel="stylesheet" href="./owl.theme.default.min.css">
+    <<link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://use.fontawesome.com/786abd23a7.js"></script>
@@ -44,7 +44,7 @@
           </span>
           <p class="lead" id="note">0</p>
         </div> 
-        <form action="" method="POST" id="formulaire">        
+        <form action="" method="post" id="formulaire">        
           <div class="col-md-10 container text-center mt-5 border">
             <div>
               <label for="user" class="form-label"></label>
@@ -55,8 +55,12 @@
               <input type="password" class="form-control" placeholder="Mot de passe" id="motDePasse" name="passe">
             </div> 
             <div class="mb-3">
+              <label for="titre" class="form-label"></label>
+              <input type="text" class="form-control" placeholder="Titre" id="titre" name="titre">
+            </div> 
+            <div class="mb-3" style="font-family: cursive;">
               <label class="form-label"></label>
-              <textarea name="avis" class="form-control" placeholder="Redigez votre message ici" rows="8"></textarea>
+              <textarea name="commentaire" class="form-control" placeholder="Commentaire" rows="8"></textarea>
             </div>
             <button id="btnEnvoyer" type="submit" class="btn button-vert mb-3">Envoyer</button>
             <button id="btnLoad" class="btn btn-secondary d-none" type="button" disabled>
