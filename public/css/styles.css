@@ -43,7 +43,7 @@ input {
 
 
 .imageBannier {
-  background-image: url('./images/living-3428529_1280.jpg');
+  background-image: url('../images/living-3428529_1280.jpg');
   height: 440px;
   width: 100%;
   background-repeat: no-repeat;
