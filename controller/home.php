@@ -1,6 +1,7 @@
 <?php
+include_once('routes/common.php');
+include_once($path_main."model/dao/EvaluationDao.php");
 
-include_once "model/dao/EvaluationDao.php";
 
 class Home {
   public function cargaHome(){
@@ -13,6 +14,7 @@ class Home {
       }
       $ponderation=round($addition/$votes,1,PHP_ROUND_HALF_UP); 
        
-    include_once('template/home.php'); 
+    include_once($path_main.'template/home.php'); 
+    
   }
 } 

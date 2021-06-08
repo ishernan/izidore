@@ -2,10 +2,12 @@
 
 session_start();
 
-include_once "../model/entity/User.php";
-include_once "../model/entity/Evaluation.php";
-include_once "../model/dao/UserDao.php";
-include_once "../model/dao/EvaluationDao.php";
+include_once('routes/common.php');
+
+include_once $path_main."model/entity/User.php";
+include_once $path_main."model/entity/Evaluation.php";
+include_once $path_main."model/dao/UserDao.php";
+include_once $path_main."model/dao/EvaluationDao.php";
 
 
 

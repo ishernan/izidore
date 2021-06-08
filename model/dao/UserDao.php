@@ -1,6 +1,6 @@
 <?php
 
-include_once '../model/Connection.php';
+include_once $path_main.'model/Connection.php';
 
 
 class UserDao extends Connection
@@ -14,3 +14,4 @@ class UserDao extends Connection
         return $response;
     }
 }
+

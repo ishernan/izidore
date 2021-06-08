@@ -1,5 +1,5 @@
 <?php
-
+include_once('routes/common.php');
 ?>
 
 <!doctype html>
@@ -13,9 +13,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">    
-    <link rel="stylesheet" href="public/css/styles.css">
-    <link rel="stylesheet" href="public/lib/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="public/lib/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="<?php echo $path_main;?>/public/css/styles.css">
+    <link rel="stylesheet" href="<?php echo $path_main;?>/public/lib/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="<?php echo $path_main;?>/public/lib/css/owl.theme.default.min.css">
 
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://use.fontawesome.com/786abd23a7.js"></script>

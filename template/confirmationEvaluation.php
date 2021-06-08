@@ -1,5 +1,5 @@
   <?php
-    include_once('common/headTemplate.php');
+    include_once('common/head.php');
   ?>
     <div class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
       <div class="d-flex">

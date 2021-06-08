@@ -1,6 +1,6 @@
 <?php
 
-include_once 'model/Connection.php';
+include_once $path_main.'model/Connection.php';
 
 
 class EvaluationDao extends Connection

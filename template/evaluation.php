@@ -1,6 +1,6 @@
 
   <?php
-    include_once('common/headTemplate.php');
+    include_once('common/head.php');
   ?>
 
 <body>
