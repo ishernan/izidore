@@ -7,8 +7,11 @@ session_start();
 $_SESSION['userId'] = "2";
 $_SESSION['vendeurId'] = "3";
 
-include_once('routes/common.php');
-echo $path_main;
+
 include_once('controller/home.php');
 $home = New home(); 
-$home->cargaHome(); 
+$home->cargaHome();
+/*
+$home->cargaHomeNavidad();
+$home->cargaHomeDiaPadre();
+*/
