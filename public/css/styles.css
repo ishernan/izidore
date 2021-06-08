@@ -231,14 +231,15 @@ a:hover {
 
 @media (max-width: 990px) {
   .responsive1 {
-    display: flex;
-    justify-content: center;
+    text-align: end;
   }
-  .responsive0 {
-    margin-right: 12em;
-  }
+  
 }
   
-  
-
+/* @media (max-width: 790px) {
+  .responsive1 {
+    margin-top: 50px ;
+  }
+}
+ */
 

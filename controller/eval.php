@@ -5,24 +5,36 @@ session_start();
 include_once "../model/entity/User.php";
 include_once "../model/entity/Evaluation.php";
 include_once "../model/dao/UserDao.php";
+include_once "../model/dao/EvaluationDao.php";
 
-$evalutaion = new Evaluation();
-$evalutaion->setCommentaire($_POST['commentaire']);
-$evalutaion->setCommentaire($_POST['commentaire']);
-$evalutaion->setCommentaire($_POST['commentaire']);
-$evalutaion->setNote($_POST['note']);
 
-var_dump($_POST['userId']);
-die;
+
 $userDao = new UserDao();
 
-$acheteur = $userDao->getUserById((int) $_POST['userId']);
-$vendeur = $userDao->getUserById((int) $_POST['vendeurId']);
+$acheteur = $userDao->getUserById((int) $_SESSION['userId']);
 
+$vendeur = $userDao->getUserById((int) $_SESSION['vendeurId']);
+//var_dump(isset($acheteur) && isset($vendeur));
 
+//verifier que l'acheteur  et le vendeur existe. S'ils existent donc stocker une nouvelle entrée dans la table "evaluation"
+if(isset($acheteur) && isset($vendeur)) {
+  $evaluation = new Evaluation();
+  $evaluation->setIdAcheteur($_SESSION['userId']);
+  $evaluation->setIdVendeur($_SESSION['vendeurId']);
+  $evaluation->setCommentaire($_POST['commentaire']);
+  $evaluation->setNote($_POST['note']);
+  // ToDo: stocker l'evaluation 
+  $evaluationDao = new EvaluationDao();
+  $resultat = $evaluationDao->setEvaluation($evaluation);
+ 
+}
+if (isset($resultat) && $resultat === true){
+  include ("../template/confirmationEvaluation.php"); 
 
-//var_dump(json_encode($_POST));
-die;
+}else {
+  include ("../template/404.php"); 
+}
+
 return json_encode($_POST);
 
 
