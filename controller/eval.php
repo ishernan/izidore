@@ -10,7 +10,6 @@ $userDao = new UserDao();
 $acheteur = $userDao->getUserById((int) $_SESSION['userId']);
 
 $vendeur = $userDao->getUserById((int) $_SESSION['vendeurId']);
-//var_dump(isset($acheteur) && isset($vendeur));
 
 //verifier que l'acheteur  et le vendeur existe. S'ils existent donc stocker une nouvelle entrée dans la table "evaluation"
 if (isset($acheteur) && isset($vendeur)) {
@@ -19,7 +18,6 @@ if (isset($acheteur) && isset($vendeur)) {
 	$evaluation->setIdVendeur($_SESSION['vendeurId']);
 	$evaluation->setCommentaire($_POST['commentaire']);
 	$evaluation->setNote($_POST['note']);
-	// ToDo: stocker l'evaluation 
 	$evaluationDao = new EvaluationDao();
 	$resultat = $evaluationDao->setEvaluation($evaluation);
 	

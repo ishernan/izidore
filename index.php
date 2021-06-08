@@ -11,7 +11,3 @@ $_SESSION['vendeurId'] = "3";
 include_once('controller/home.php');
 $home = New home(); 
 $home->cargaHome();
-/*
-$home->cargaHomeNavidad();
-$home->cargaHomeDiaPadre();
-*/

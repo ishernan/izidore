@@ -109,8 +109,8 @@
 								<div class="card bg-light mb-3 d-none" style="max-width: 10rem;" id="cardRating">
 									<div class="card-header police1" style="font-size: 16px;">Evaluez le vendeur</div>
 									<div class="card-body police1">
-										<h5 class="card-title ">Note : <?= $ponderation; ?> sur 5</h5>
-										<p class="card-text fw-bold"><?= $votes; ?> Notes </p>
+										<h5 class="card-title">Note : <span id="ponderation"><?= $ponderation; ?> </span>  sur 5</h5>
+										<p class="card-text fw-bold"><?= $votes; ?> Evaluations </p>
 									</div>
 								</div>
 
@@ -656,6 +656,7 @@
 	<script src="public/lib/js/owl.carousel.min.js"></script>
 	<script src="public/js/carousel.js"></script>
 	<script src="public/js/rating.js"></script>
+	<script src="public/js/script.js"></script>
 
 
 </body>
