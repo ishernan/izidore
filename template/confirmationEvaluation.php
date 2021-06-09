@@ -2,14 +2,21 @@
 include_once('common/head.php');
 ?>
 <body>
-<div class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
-	<div class="d-flex">
-		<div class="toast-body">
+
+	<nav aria-label="breadcrumb">
+			<ol class="breadcrumb container">
+				<li class="breadcrumb-item"><a href="../index.php" class="text-black-50">Accueil</a></li>
+			</ol>
+		</nav>
+
+	<div class="card container" style="width: 18rem;">
+		<div class="card-body text-center">
 			Evaluation envoyée
 		</div>
-		<button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
 	</div>
-</div>
+	
+
+	
 </body>
 
 </html>

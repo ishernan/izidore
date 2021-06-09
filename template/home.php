@@ -1,6 +1,5 @@
 
 <body>
-	<header>
 		<!-- nav1 -->
 		<nav class="navbar navbar-expand-md navbar-light bg-white border shadow-sm">
 			<div class="container-fluid">
@@ -656,7 +655,6 @@
 	<script src="public/lib/js/owl.carousel.min.js"></script>
 	<script src="public/js/carousel.js"></script>
 	<script src="public/js/rating.js"></script>
-	<script src="public/js/script.js"></script>
 
 
 </body>

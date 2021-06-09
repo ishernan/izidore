@@ -18,10 +18,5 @@ class Home
 		include_once('template/common/headHome.php');
 		include_once('template/home.php');
 	}
-	/*
-	public function cargaHomeNavidad()
-	{
-		...
-	}
-	*/
+
 }

@@ -1,5 +1,5 @@
 <?php
-if(is_file('../model/Connection.php')){
+if(is_file('../model/Connection.php')){  //à elimminer ?
 	include_once '../model/Connection.php';
 } else {
 	include_once 'model/Connection.php';
@@ -12,7 +12,7 @@ class EvaluationDao extends Connection
 	{
 		$query = "INSERT INTO evaluation(id_acheteur, id_vendeur, note, commentaire)
         VALUES(:acheteur, :vendeur, :note, :commentaire)";
-		# INSERTION valores associativos
+		# INSERTION valeurs associatifs 
 		$stmt = $this->cnx->prepare($query);
 		$stmt->execute([
 			':acheteur' => $evaluation->getIdAcheteur(),
